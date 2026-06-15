@@ -18,21 +18,13 @@
     header {
       background: #ffffff;
       border-bottom: 1px solid #e5e5e5;
-      padding: 16px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 24px;
+      text-align: center;
     }
     header img {
-      height: 44px;
+      height: 56px;
       width: auto;
     }
-    header a.back {
-      color: #999;
-      text-decoration: none;
-      font-size: 13px;
-    }
-    header a.back:hover { color: #1a1a1a; }
 
     main {
       max-width: 680px;
@@ -45,7 +37,7 @@
       font-weight: 600;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #48cae4;
+      color: #1b75bb;
       margin-bottom: 8px;
     }
 
@@ -72,6 +64,8 @@
     }
 
     p { margin-bottom: 14px; color: #333; }
+    p a, li a { color: #1b75bb; text-decoration: none; }
+    p a:hover, li a:hover { text-decoration: underline; }
 
     ul {
       margin: 10px 0 14px 20px;
@@ -80,13 +74,13 @@
     ul li { margin-bottom: 6px; }
 
     .callout {
-      background: #eafff0;
-      border-left: 3px solid #a2d905;
+      background: #ebf4fc;
+      border-left: 3px solid #1b75bb;
       border-radius: 0 6px 6px 0;
       padding: 14px 18px;
       margin: 20px 0;
       font-size: 15px;
-      color: #1a5c2a;
+      color: #0d3d63;
     }
 
     footer {
@@ -96,8 +90,15 @@
       padding: 32px 24px;
       border-top: 1px solid #e5e5e5;
     }
-    footer a { color: #48cae4; text-decoration: none; }
+    footer a { color: #1b75bb; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header { padding: 16px; }
+      header img { height: 44px; }
+      main { padding: 32px 16px 60px; }
+      h1 { font-size: 22px; }
+    }
   </style>
 </head>
 <body>
@@ -106,7 +107,6 @@
   <a href="https://clarityscape.com">
     <img src="clarityscape-logo.png" alt="Clarityscape" />
   </a>
-  <a class="back" href="https://clarityscape.com">clarityscape.com ↗</a>
 </header>
 
 <main>
